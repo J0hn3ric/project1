@@ -17,7 +17,7 @@ def on_press(key):
         if all(k in current for k in COMBINATION):
             time.sleep(1.2)
             control.tap(keyboard.Key.cmd_l)
-            current.remove(key)
+            current.clear()
             print("windows key pressed")
     if key == keyboard.KeyCode.from_char('x'):
         print("exit")
