@@ -12,7 +12,6 @@ current = set()
 
 def on_press(key):
     key=listener.canonical(key)
-    print(key)
     if key in COMBINATION:
         current.add(key)
         if all(k in current for k in COMBINATION):
