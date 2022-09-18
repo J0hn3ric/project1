@@ -18,9 +18,7 @@ def on_press(key):
             time.sleep(1.2)
             control.tap(keyboard.Key.cmd_l)
             current.clear()
-            print("windows key pressed")
     if key == keyboard.KeyCode.from_char('x'):
-        print("exit")
         listener.stop()
         sys.exit(0)
 
